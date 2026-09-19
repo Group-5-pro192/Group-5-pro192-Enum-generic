@@ -1,4 +1,4 @@
-package demogeneric;
+package pkgenum.generic;
 
 class Coffee {
 
