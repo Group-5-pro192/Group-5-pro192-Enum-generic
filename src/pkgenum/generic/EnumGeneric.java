@@ -160,9 +160,9 @@ public class EnumGeneric {
     }
 
     /**
-     * Generic Method with multi-type parameters: Compares two keys.
+     * Generic Method with key comparison.
      */
-    public static <K, V> boolean compareKeys(K key1, K key2) {
+    public static <K> boolean compareKeys(K key1, K key2) {
         if (key1 == null) {
             return key2 == null;
         }
@@ -214,20 +214,17 @@ public class EnumGeneric {
         System.out.println("Key comparison result: " + isEqual);
 
         System.out.println("\n=== 4. GENERIC CLASS (CUP<T>) ===");
-        // Reusing Cup blueprint with Coffee instance
-        Cup<Coffee> morningCup = new Cup<>();
-        Coffee blackCoffee = new Coffee("Black Coffee");
+        MyCup<MyCoffee> morningCup = new MyCup<>();
+        MyCoffee blackCoffee = new MyCoffee("Black Coffee");
         morningCup.pour(blackCoffee);
         serveCustomer(morningCup.drinkIt());
 
-        // Reusing Cup blueprint with MilkTea instance
-        Cup<MilkTea> afternoonCup = new Cup<>();
-        MilkTea bobaTea = new MilkTea("Boba");
+        MyCup<MyMilkTea> afternoonCup = new MyCup<>();
+        MyMilkTea bobaTea = new MyMilkTea("Boba");
         afternoonCup.pour(bobaTea);
         serveCustomer(afternoonCup.drinkIt());
 
-        // Generic Class storing an Enum type
-        Cup<AppPlanet> spaceCup = new Cup<>();
+        MyCup<AppPlanet> spaceCup = new MyCup<>();
         spaceCup.pour(AppPlanet.EARTH);
         System.out.println("Item inside space cup: " + spaceCup.drinkIt());
     }

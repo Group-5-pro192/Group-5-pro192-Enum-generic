@@ -1,4 +1,4 @@
-package demo2generic;
+package pkgenum.generic;
 
 import java.util.ArrayList;
 import java.util.HashMap;
