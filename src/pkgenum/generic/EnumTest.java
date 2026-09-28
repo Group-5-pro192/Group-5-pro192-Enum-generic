@@ -13,7 +13,7 @@ public class EnumTest {
         Level[] allLevels = Level.values();
 
         for (Level lvl : allLevels) {
-            System.out.println("Cấp độ: " + lvl);
+            System.out.println("Level: " + lvl);
         }
     }
 }
