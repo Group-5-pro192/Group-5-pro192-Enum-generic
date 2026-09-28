@@ -1,3 +1,4 @@
+package pkgenum.generic;
 
 enum Planet {
     MERCURY(3.303e+23, 2.4397e6),
@@ -30,11 +31,11 @@ public class EnumDemo {
 
         double mass = yourWeightOnEarth / Planet.EARTH.surfaceGravity();
 
-        System.out.println("Kết quả đo trọng lượng của bạn (60kg) trên các hành tinh:");
+        System.out.println("Results of measuring your weight (60kg) on ​​the planets:");
         System.out.println("---------------------------------------------------------");
 
         for (Planet p : Planet.values()) {
-            System.out.printf("Trọng lượng trên %s là: %.2f kg%n", p, p.surfaceWeight(mass));
+            System.out.printf("The weight per %s is: %.2f kg%n", p, p.surfaceWeight(mass));
         }
     }
 }
