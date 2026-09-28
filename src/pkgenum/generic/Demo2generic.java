@@ -86,16 +86,16 @@ class SpecialCombo<T, S, U> {
 public class Demo2generic {
 
     public static <M> void serveCustomer(M orderItem) {
-        System.out.println("🧑‍🍳 Serving: " + orderItem);
+        System.out.println("Serving: " + orderItem);
     }
 
     public static <G> G giveSurpriseGift(G gift) {
-        System.out.println("🎁 Giving customer a gift: " + gift);
+        System.out.println("Giving customer a gift: " + gift);
         return gift;
     }
 
     public static void main(String[] args) {
-        System.out.println("=== ☕ COMPREHENSIVE BEVERAGE SYSTEM ===\n");
+        System.out.println("===COMPREHENSIVE BEVERAGE SYSTEM ===\n");
 
         Drink<String> myCoffee = new Drink<>("Black Iced Coffee");
 
