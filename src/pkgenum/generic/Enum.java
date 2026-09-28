@@ -3,9 +3,7 @@ package pkgenum.generic;
 enum Day {
     SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
 }
-
 public class Enum {
-
     Day d;
 
     public Enum(Day d) {
